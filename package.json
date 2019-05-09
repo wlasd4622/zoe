@@ -4,7 +4,7 @@
   "description": "",
   "main": "zoe.js",
   "scripts": {
-    "getList": " node main getList",
+    "getlist": " node main getList",
     "getphone": " node main getPhone",
     "export": " node main exportExcel"
   },
