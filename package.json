@@ -1,4 +1,24 @@
 {
+  "name": "zoe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "zoe.js",
+  "scripts": {
+    "getList": " node main getList",
+    "getphone": " node main getPhone",
+    "export": " node main exportExcel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlasd4622/zoe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wlasd4622/zoe/issues"
+  },
+  "homepage": "https://github.com/wlasd4622/zoe#readme",
   "devDependencies": {
     "md5": "^2.2.1",
     "node-xlsx": "^0.14.1",

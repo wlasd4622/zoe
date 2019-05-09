@@ -87,10 +87,9 @@ class HouseController {
         }
       }
     }
-    setTimeout(() => {
-      this.pageIndex++;
-      this.getList()
-    }, 5000)
+    await this.sleep(5000)
+    this.pageIndex++;
+    await this.getList()
   }
 
   async getDetailUrl() {
@@ -190,6 +189,7 @@ class HouseController {
       name: 'sheet1',
       data: xlsData
     }]);
+    if (!fs.existsSync('./dist')) fs.mkdirSync('./dist');
     fs.writeFileSync('./dist/青岛二手房.xls', buffer);
   }
 }
